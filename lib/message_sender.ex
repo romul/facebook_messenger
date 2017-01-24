@@ -50,7 +50,7 @@ defmodule FacebookMessenger.Sender do
   """
   def url do
     query = "access_token=#{page_token}"
-    "https://graph.facebook.com/v2.6/me/messages?#{query}"
+    "https://graph.facebook.com/v2.8/me/messages?#{query}"
   end
 
   defp page_token do
